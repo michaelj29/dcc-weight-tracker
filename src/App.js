@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
 import AddEntryForm from './Components/AddEntry/AddEntryForm';
+import EntriesChartTracker from './Components/EntriesChartTracker/EntriesChartTracker';
 
 function App() {
 
@@ -18,6 +19,7 @@ return (
   <div>
     <DisplayEntries userEntries={entries}/>
     <AddEntryForm addNewEntryProperty={addNewEntry} />
+    <EntriesChartTracker userEntries={entries}/>
   </div>
 );
 
